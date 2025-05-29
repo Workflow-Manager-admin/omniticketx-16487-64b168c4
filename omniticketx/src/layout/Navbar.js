@@ -1,34 +1,48 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 /**
  * PUBLIC_INTERFACE
  * Navbar: Primary navigation bar for OmniTicketX.
- * Responsive and branded with orange/black theme.
+ * Modern horizontally centered, accessible, and responsive nav with even spacing.
  */
-const Navbar = () => (
-  <nav className="navbar">
-    <div
-      className="container"
-      style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}
-    >
-      <div className="logo" style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <span className="logo-symbol" style={{ color: "var(--kavia-orange)", fontWeight: "bold", fontSize: 22 }}>🎟️</span>
-        <span style={{ fontWeight: 600, letterSpacing: 1 }}>
-          <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>OmniTicketX</Link>
-        </span>
+const NAV_LINKS = [
+  { to: "/search", label: "Search" },
+  { to: "/booking", label: "Booking" },
+  { to: "/personalization", label: "Personalization" },
+  { to: "/ar-preview", label: "AR Preview" },
+  { to: "/admin", label: "Admin" },
+  { to: "/notifications", label: "Notifications" },
+];
+
+const Navbar = () => {
+  const location = useLocation();
+  return (
+    <nav className="navbar" role="navigation" aria-label="primary navigation">
+      <div className="container navbar-flex">
+        <div className="logo" style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <span className="logo-symbol" style={{ color: "var(--kavia-orange)", fontWeight: "bold", fontSize: 22 }}>🎟️</span>
+          <span style={{ fontWeight: 600, letterSpacing: 1 }}>
+            <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>OmniTicketX</Link>
+          </span>
+        </div>
+        {/* Evenly spaced nav - centered on desktop. Responsive for mobile. */}
+        <ul className="nav-links" style={{ listStyle: "none", margin: 0, padding: 0 }}>
+          {NAV_LINKS.map(link => (
+            <li key={link.to} style={{ display: "inline-flex" }}>
+              <Link
+                to={link.to}
+                className="btn"
+                aria-current={location.pathname === link.to ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div style={{ display: "flex", gap: 18, alignItems: "center" }}>
-        <Link to="/" className="btn" style={{ backgroundColor: "var(--kavia-orange)", textDecoration: "none" }}>Home</Link>
-        <Link to="/search" className="btn" style={{ backgroundColor: "var(--kavia-orange)", textDecoration: "none" }}>Search</Link>
-        <Link to="/booking" className="btn" style={{ backgroundColor: "var(--kavia-orange)", textDecoration: "none" }}>Booking</Link>
-        <Link to="/personalization" className="btn" style={{ backgroundColor: "var(--kavia-orange)", textDecoration: "none" }}>Personalization</Link>
-        <Link to="/ar-preview" className="btn" style={{ backgroundColor: "var(--kavia-orange)", textDecoration: "none" }}>AR Preview</Link>
-        <Link to="/admin" className="btn" style={{ backgroundColor: "var(--kavia-orange)", textDecoration: "none" }}>Admin</Link>
-        <Link to="/notifications" className="btn" style={{ backgroundColor: "var(--kavia-orange)", textDecoration: "none" }}>Notifications</Link>
-      </div>
-    </div>
-  </nav>
-);
+    </nav>
+  );
+};
 
 export default Navbar;
