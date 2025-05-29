@@ -2,47 +2,27 @@
 > react-kavia@0.1.0 start
 > react-scripts start
 
-(node:2016) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:2707) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:2016) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:2707) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
-Failed to compile.
+Compiled with warnings.
 
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src'
+[eslint] 
+src/layout/Footer.js
+  Line 21:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 22:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 23:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
 WARNING in [eslint] 
 src/layout/Footer.js
   Line 21:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
   Line 22:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
   Line 23:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
 
-ERROR in ./src/App.js 7:0-49
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src'
-
-ERROR in ./src/containers/MainContainer.js 8:0-49
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src/containers'
-
-ERROR in ./src/layout/Navbar.js 5:0-40
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src/layout'
-
-webpack compiled with 3 errors and 1 warning
+webpack compiled with 1 warning
 Compiling...
-Failed to compile.
-
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src'
-WARNING in [eslint] 
-src/layout/Footer.js
-  Line 21:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
-  Line 22:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
-  Line 23:9:  The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
-
-ERROR in ./src/App.js 7:0-49
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src'
-
-ERROR in ./src/containers/MainContainer.js 8:0-49
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src/containers'
-
-ERROR in ./src/layout/Navbar.js 5:0-40
-Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/omniticketx-16487-64b168c4/omniticketx/src/layout'
-
-webpack compiled with 3 errors and 1 warning
