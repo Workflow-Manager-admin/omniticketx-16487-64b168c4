@@ -120,19 +120,34 @@ body {
 }
 
 @media (max-width: 600px) {
-  .navbar .container {
+  .navbar .container,
+  .navbar-flex {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     min-height: unset;
     padding-top: .5em;
     padding-bottom: .5em;
-    gap: 7px;
+    gap: 4px;
   }
   .nav-links {
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    gap: 7px 10px;
+    width: 100%;
   }
-  .logo { font-size: 1.07rem; }
+  .nav-links li {
+    width: auto;
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+  .logo { 
+    font-size: 1.07rem;
+    margin-bottom: 2px; 
+    justify-content: center;
+  }
 }
 
 /* Notification Bar */
